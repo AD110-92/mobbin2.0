@@ -1,0 +1,997 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media only screen and (min-width:300px) and (max-width:480px) {
+    body {
+        font-family: Mozilla Headline, sans-serif;
+        background-color: #011c42;
+    }
+
+    .main-container {
+        max-width: 480px;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3vw 4vw;
+    }
+
+    nav .deskLogo {
+        display: none;
+    }
+
+    nav .phLogo img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10vw;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .download {
+        display: none;
+    }
+    
+    .fa-bars {
+        color: black;
+        font-size: 6vw;
+        background-color: #34e8bb;
+        padding: 4vw 12vw 4vw 7vw;
+    }
+
+    .fa-circle-user {
+        display: none;
+    }
+    
+    .main-section {
+        margin-top: 20vw;
+        padding: 3vw 4vw;
+    }
+
+    .main-section h1 {
+        font-size: 10vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .buttons {
+        margin-top: 6vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vw;
+        gap: 4vw;
+    }
+
+    .buttons .btn1 button {
+        background-color: #34e8bb;
+        color: black;
+        font-size: 5vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 4vw 0;
+        border: none;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    .buttons .btn1 button:hover {
+        background-color: #28caa3;
+        cursor: pointer;
+    }
+
+    .buttons .btn2 button {
+        background-color: #1b3355;
+        color: white;
+        font-size: 5vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 4vw 0;
+        border: 2px solid white;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    .buttons .btn2 button:hover {
+        background-color: #283f61;
+        cursor: pointer;
+    }
+
+    .main-section p {
+        font-size: 4vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        margin-top: 25vw;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section {
+        margin-top: 20vw;
+        padding: 3vw 4vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+    .sub-section h3 {
+        font-size: 4vw;
+        font-family: nunito, sans-serif;
+        color: #efe725;
+        font-weight: 700;
+    }
+
+    .sub-section .subHeading1 {
+        font-size: 9vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .para1 {
+        font-size: 4vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section h2 {
+        font-size: 8vw;
+        font-family: nunito, sans-serif;
+        font-weight: 500;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .features {
+        display: flex;
+        flex-direction: column;
+        gap: 6vw;
+        margin-top: 4vw;
+        font-family: nunito, sans-serif;
+        color: white;
+    }
+
+    .sub-section button {
+        background-color: transparent;
+        color: #e17cc9;
+        font-size: 4vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 4vw 0;
+        border: none;
+        width: 100%;
+        margin-top: 10vw;
+        transition: background-color 0.3s ease;
+    }
+
+    .sub-section button:hover {
+        background-color: rgba(225, 124, 201, 0.1);
+        cursor: pointer;
+    }
+
+    .sub-section .frame {
+        width: 100%;
+    }
+
+    .sub-section .frame video {
+        width: 100%;
+        border-radius: 1.5vw;
+    }
+
+    .sub-section .subHeading2 {
+        font-size: 9vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-top: 20vw;
+    }
+
+    .sub-section .para2 {
+        font-size: 4vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section h2 {
+        font-size: 8vw;
+        font-family: nunito, sans-serif;
+        font-weight: 500;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .features2 {
+        display: flex;
+        flex-direction: column;
+        gap: 6vw;
+        margin-top: 4vw;
+        font-family: nunito, sans-serif;
+        color: white;
+    }
+
+    .sub-section .frame2 {
+        width: 100%;
+    }
+
+    .sub-section .frame2 video {
+        width: 100%;
+        border-radius: 1.5vw;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+    body {
+        font-family: Mozilla Headline, sans-serif;
+        background-color: #011c42;
+    }
+
+    .main-container {
+        max-width: 768px;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vw 3vw;
+    }
+
+    nav .deskLogo {
+        display: none;
+    }
+
+    nav .phLogo img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8vw;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .download {
+        display: none;
+    }
+
+    .fa-bars {
+        color: black;
+        font-size: 4vw;
+        background-color: #34e8bb;
+        padding: 2vw 6vw 2vw 3vw;
+    }
+
+    .fa-circle-user {
+        display: none;
+    }
+
+    .main-section {
+        margin-top: 10vw;
+        padding: 2vw 3vw;
+    }
+
+    .main-section h1 {
+        font-size: 6vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .buttons {
+        margin-top: 4vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6vw;
+        gap: 3vw;
+    }
+
+    .buttons .btn1 button {
+        background-color: #34e8bb;
+        color: black;
+        font-size: 3.5vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 2.5vw 0;
+        border: none;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    .buttons .btn1 button:hover {
+        background-color: #28caa3;
+        cursor: pointer;
+    }
+
+    .buttons .btn2 button {
+        background-color: #1b3355;
+        color: white;
+        font-size: 3.5vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 2.5vw 0;
+        border: 2px solid white;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    .buttons .btn2 button:hover {
+        background-color: #283f61;
+        cursor: pointer;
+    }
+
+    .main-section p {
+        font-size: 3vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        margin-top: 15vw;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section {
+        margin-top: 15vw;
+        padding: 2vw 3vw;
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .sub-section h3 {
+        font-size: 3vw;
+        font-family: nunito, sans-serif;
+        color: #efe725;
+        font-weight: 700;
+    }
+
+    .sub-section .subHeading1 {
+        font-size: 6vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .para1 {
+        font-size: 3vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section h2 {
+        font-size: 5.5vw;
+        font-family: nunito, sans-serif;
+        font-weight: 500;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .features {
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+        margin-top: 3vw;
+        font-family: nunito, sans-serif;
+        color: white;
+    }
+
+    .sub-section button {
+        background-color: transparent;
+        color: #e17cc9;
+        font-size: 3vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 2.5vw 0;
+        border: none;
+        width: 100%;
+        margin-top: 6vw;
+        transition: background-color 0.3s ease;
+    }
+
+    .sub-section button:hover {
+        background-color: rgba(225, 124, 201, 0.1);
+        cursor: pointer;
+    }
+
+    .sub-section .frame {
+        width: 100%;
+    }
+
+    .sub-section .frame video {
+        width: 100%;
+        border-radius: 1vw;
+    }
+
+    .sub-section .subHeading2 {
+        font-size: 6vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-top: 15vw;
+    }
+
+    .sub-section .para2 {
+        font-size: 3vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section h2 {
+        font-size: 5.5vw;
+        font-family: nunito, sans-serif;
+        font-weight: 500;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .features2 {
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+        margin-top: 3vw;
+        font-family: nunito, sans-serif;
+        color: white;
+    }
+
+    .sub-section .frame2 {
+        width: 100%;
+    }
+
+    .sub-section .frame2 video {
+        width: 100%;
+        border-radius: 1vw;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    body {
+        font-family: Mozilla Headline, sans-serif;
+        background-color: #011c42;
+    }
+
+    .main-container {
+        max-width: 1024px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5vw 2vw;
+    }
+
+    nav .deskLogo {
+        display: none;
+    }
+
+    nav .phLogo img {
+        width: 6vw;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .download {
+        display: none;
+    }
+
+    .fa-bars {
+        color: black;
+        font-size: 3vw;
+        background-color: #34e8bb;
+        padding: 1.5vw 5vw 1.5vw 2.5vw;
+    }
+
+    .fa-circle-user {
+        display: none;
+    }
+
+    .main-section {
+        margin-top: 6vw;
+        padding: 1.5vw 2vw;
+    }
+
+    .main-section h1 {
+        font-size: 4vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .buttons {
+        margin-top: 3vw;
+        display: flex;
+        gap: 2vw;
+    }
+
+    .buttons .btn1 button {
+        background-color: #34e8bb;
+        color: black;
+        font-size: 2.5vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 1.5vw 2vw;
+        border: none;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    .buttons .btn1 button:hover {
+        background-color: #28caa3;
+        cursor: pointer;
+    }
+
+    .buttons .btn2 button {
+        background-color: #1b3355;
+        color: white;
+        font-size: 2.5vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 1.3vw 6vw;
+        border: 2px solid white;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    .buttons .btn2 button:hover {
+        background-color: #283f61;
+        cursor: pointer;
+    }
+
+    .main-section p {
+        font-size: 2vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        margin-top: 10vw;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section {
+        margin-top: 10vw;
+        padding: 1.5vw 2vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .sub-section h3 {
+        font-size: 2vw;
+        font-family: nunito, sans-serif;
+        color: #efe725;
+        font-weight: 700;
+    }
+
+    .sub-section .subHeading1 {
+        font-size: 4vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .para1 {
+        font-size: 2vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section h2 {
+        font-size: 4vw;
+        font-family: nunito, sans-serif;
+        font-weight: 500;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .features {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        margin-top: 2vw;
+        font-family: nunito, sans-serif;
+        color: white;
+    }
+
+    .sub-section button {
+        background-color: transparent;
+        color: #e17cc9;
+        font-size: 2vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 1.5vw 0;
+        border: none;
+        width: 100%;
+        margin-top: 4vw;
+        transition: background-color 0.3s ease;
+    }
+
+    .sub-section button:hover {
+        background-color: rgba(225, 124, 201, 0.1);
+        cursor: pointer;
+    }
+
+    .sub-section .frame {
+        width: 100%;
+    }
+
+    .sub-section .frame video {
+        width: 100%;
+        border-radius: 1vw;
+    }
+
+    .sub-section .subHeading2 {
+        font-size: 4vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-top: 10vw;
+    }
+
+    .sub-section .para2 {
+        font-size: 2vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section h2 {
+        font-size: 4vw;
+        font-family: nunito, sans-serif;
+        font-weight: 500;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .features2 {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        margin-top: 2vw;
+        font-family: nunito, sans-serif;
+        color: white;
+    }
+
+    .sub-section .frame2 {
+        width: 100%;
+    }
+
+    .sub-section .frame2 video {
+        width: 100%;
+        border-radius: 1vw;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    body {
+        font-family: nunito, sans-serif;
+        background-color: #011c42;
+    }
+
+    .main-container {
+        max-width: 1200px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vw 2vw;
+        gap: 2vw;
+    }
+
+    nav .phLogo img {
+        display: none;
+    }
+
+    nav .deskLogo img {
+        width: 6vw;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+        color: white;
+        font-size: 0.8vw;
+    }
+
+    .drop1 h4, .dropbtn1, .drop2 h4, .dropbtn2, .drop3 h4, .dropbtn3, .drop4 h4, .dropbtn4 {
+        color: white;
+        font-family: nunito, sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .drop1 .products-dropdown, .drop2 .enterprise-dropdown, .drop3 .resources-dropdown, .drop4 .company-dropdown {
+        display: none;
+        position: absolute;
+        background-color: #011c42;
+        padding: 2vw;
+        border-radius: 0.5vw;
+        box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .drop1:hover .products-dropdown, .drop2:hover .enterprise-dropdown, .drop3:hover .resources-dropdown, .drop4:hover .company-dropdown {
+        display: block;
+    }
+
+    .products-dropdown h6, .enterprise-dropdown h6 {
+        color: white;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        font-size: 1vw;
+        margin: 0.5vw 0;
+    }
+
+    .products-dropdown p, .enterprise-dropdown p {
+        color: #cccccc;
+        font-family: nunito, sans-serif;
+        font-weight: 400;
+        font-size: 0.8vw;
+        margin-bottom: 1.5vw;
+        width: 20vw;
+    }
+    
+    .products-dropdown h5, .enterprise-dropdown h5, .resources-dropdown h5, .company-dropdown h5 {
+        color: #34e8bb;
+        font-family: mozilla headline, sans-serif;
+        font-weight: 700;
+        font-size: 1.2vw;
+        cursor: pointer;
+    }
+
+    .products-dropdown h5:hover, .enterprise-dropdown h5:hover, .resources-dropdown h5:hover, .company-dropdown h5:hover {
+        text-decoration: underline;
+    }
+
+    .download button {
+        background-color: #34e8bb;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        font-size: 0.8vw;
+        padding: 1vw 2vw;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .download button:hover {
+        background-color: #28caa3;
+        cursor: pointer;
+    }
+
+    nav .fa-bars {
+        display: none;
+    }
+
+    nav .fa-circle-user {
+        color: white;
+        font-size: 2vw;
+    }
+
+    .main-section {
+        margin-top: 4vw;
+        padding: 1vw 2vw;
+    }
+
+    .main-section h1 {
+        font-size: 3vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .buttons {
+        margin-top: 2vw;
+        display: flex;
+        gap: 2vw;
+    }
+
+    .buttons .btn1 button {
+        background-color: #34e8bb;
+        color: black;
+        font-size: 1vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 1vw 2vw;
+        border: none;
+        width: auto;
+        transition: background-color 0.3s ease;
+    }
+
+    .buttons .btn1 button:hover {
+        background-color: #28caa3;
+        cursor: pointer;
+    }
+
+    .buttons .btn2 button {
+        background-color: #1b3355;
+        color: white;
+        font-size: 1vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 0.9vw 4vw;
+        border: 2px solid white;
+        width: auto;
+        transition: background-color 0.3s ease;
+    }
+
+    .buttons .btn2 button:hover {
+        background-color: #283f61;
+        cursor: pointer;
+    }
+
+    .main-section p {
+        font-size: 1.2vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        margin-top: 6vw;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section {
+        margin-top: 6vw;
+        padding: 1vw 2vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .sub-section h3 {
+        font-size: 1.2vw;
+        font-family: nunito, sans-serif;
+        color: #efe725;
+        font-weight: 700;
+    }
+
+    .sub-section .subHeading1 {
+        font-size: 3vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .para1 {
+        font-size: 1.2vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section h2 {
+        font-size: 3vw;
+        font-family: nunito, sans-serif;
+        font-weight: 500;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .features {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        margin-top: 1.5vw;
+        font-family: nunito, sans-serif;
+        color: white;
+    }
+
+    .sub-section button {
+        background-color: transparent;
+        color: #e17cc9;
+        font-size: 1.2vw;
+        font-family: nunito, sans-serif;
+        font-weight: 700;
+        padding: 1vw 0;
+        border: none;
+        width: auto;
+        margin-top: 3vw;
+        transition: background-color 0.3s ease;
+    }
+
+    .sub-section button:hover {
+        background-color: rgba(225, 124, 201, 0.1);
+        cursor: pointer;
+    }
+
+    .sub-section .frame {
+        width: 100%;
+    }
+
+    .sub-section .frame video {
+        width: 100%;
+        border-radius: 0.5vw;
+    }
+
+    .sub-section .subHeading2 {
+        font-size: 3vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-top: 6vw;
+    }
+
+    .sub-section .para2 {
+        font-size: 1.2vw;
+        font-family: nunito, sans-serif;
+        color: white;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .sub-section h2 {
+        font-size: 3vw;
+        font-family: nunito, sans-serif;
+        font-weight: 500;
+        color: white;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+
+    .sub-section .features2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        margin-top: 1.5vw;
+        font-family: nunito, sans-serif;
+        color: white;
+    }
+
+    .sub-section .frame2 {
+        width: 100%;
+    }
+
+    .sub-section .frame2 video {
+        width: 100%;
+        border-radius: 0.5vw;
+    }
+}
